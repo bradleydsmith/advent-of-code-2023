@@ -5,8 +5,6 @@ import Header from "./header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const bodyClassName = inter.className + " dark";
-
 export const metadata: Metadata = {
   title: "Advent of Code 2023",
   description: "Advent of Code 2023",
@@ -19,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={bodyClassName}>
+      <body className={`${inter.className} dark`}>
         <Header />
         {children}
       </body>
