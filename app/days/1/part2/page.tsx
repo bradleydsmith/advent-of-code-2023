@@ -6,9 +6,12 @@ import Link from "next/link";
 export default function Day2() {
   return (
     <main className="flex flex-col space-y-3 p-12">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
-        Day 1 - Part 2
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-red-500 to-green-500 inline-block text-transparent bg-clip-text">
+        Day 1: Trebuchet?!
       </h1>
+      <h2 className="pt-4 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-center text-slate-300">
+        Part 2
+      </h2>
       <p>
         Your calculation isn't quite right. It looks like some of the digits are
         actually spelled out with letters: one, two, three, four, five, six,
