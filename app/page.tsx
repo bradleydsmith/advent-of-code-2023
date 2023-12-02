@@ -14,7 +14,7 @@ export default function Home() {
         Source available on GitHub:
         <br />
         <a
-          className="hover:underline"
+          className="text-blue-400 hover:underline"
           href="https://github.com/bradleydsmith/advent-of-code-2023"
         >
           https://github.com/bradleydsmith/advent-of-code-2023
@@ -22,12 +22,12 @@ export default function Home() {
       </p>
       <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
         <li>
-          <Link className="hover:underline" href="/days/1">
+          <Link className="text-blue-400 hover:underline" href="/days/1">
             Day 1
           </Link>
         </li>
         <li>
-          <Link className="hover:underline" href="/days/2">
+          <Link className="text-blue-400 hover:underline" href="/days/2">
             Day 2
           </Link>
         </li>
