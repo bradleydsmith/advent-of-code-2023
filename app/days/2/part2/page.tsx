@@ -39,28 +39,26 @@ export default function Day2Part2() {
           Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
         </code>
       </p>
-      <p>
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          <li>
-            In game 1, the game could have been played with as few as 4 red, 2
-            green, and 6 blue cubes. If any color had even one fewer cube, the
-            game would have been impossible.
-          </li>
-          <li>
-            Game 2 could have been played with a minimum of 1 red, 3 green, and
-            4 blue cubes.
-          </li>
-          <li>
-            Game 3 must have been played with at least 20 red, 13 green, and 6
-            blue cubes.
-          </li>
-          <li>Game 4 required at least 14 red, 3 green, and 15 blue cubes.</li>
-          <li>
-            Game 5 needed no fewer than 6 red, 3 green, and 2 blue cubes in the
-            bag.
-          </li>
-        </ul>
-      </p>
+      <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+        <li>
+          In game 1, the game could have been played with as few as 4 red, 2
+          green, and 6 blue cubes. If any color had even one fewer cube, the
+          game would have been impossible.
+        </li>
+        <li>
+          Game 2 could have been played with a minimum of 1 red, 3 green, and 4
+          blue cubes.
+        </li>
+        <li>
+          Game 3 must have been played with at least 20 red, 13 green, and 6
+          blue cubes.
+        </li>
+        <li>Game 4 required at least 14 red, 3 green, and 15 blue cubes.</li>
+        <li>
+          Game 5 needed no fewer than 6 red, 3 green, and 2 blue cubes in the
+          bag.
+        </li>
+      </ul>
       <p>
         The power of a set of cubes is equal to the numbers of red, green, and
         blue cubes multiplied together. The power of the minimum set of cubes in

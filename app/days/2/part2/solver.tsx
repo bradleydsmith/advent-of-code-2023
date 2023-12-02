@@ -10,16 +10,11 @@ export default function Solver() {
   const [answer, setAnswer] = useState("");
 
   function process() {
-    const MAX_RED_CUBES = 12;
-    const MAX_GREEN_CUBES = 13;
-    const MAX_BLUE_CUBRES = 14;
-
     let total = 0;
 
     let games = input.split("\n");
 
     games.forEach((game) => {
-      let impossible = false;
       let minRed = 0;
       let minGreen = 0;
       let minBlue = 0;
