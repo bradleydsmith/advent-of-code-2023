@@ -8,6 +8,9 @@ export default function Home() {
         Advent Of Code 2023
       </h1>
       <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+        <li>
+          <Link href="/days/1">Day 1</Link>
+        </li>
       </ul>
     </main>
   );
