@@ -79,6 +79,9 @@ export default function Day3() {
         <Link href="/">
           <Button>Go Home</Button>
         </Link>
+        <Link href="/days/3/part2">
+          <Button>Go to Part 2</Button>
+        </Link>
       </div>
     </main>
   );
