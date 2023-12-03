@@ -31,7 +31,7 @@ export default function Solver() {
     for (let i = 0; i < lines.length; i++) {
       const line = grid[i];
       let digits = [];
-      let isSymbolAdjuscent = false;
+      let isSymbolAdjacent = false;
 
       for (let j = 0; j < line.length; j++) {
         const character = line[j];
@@ -46,7 +46,7 @@ export default function Solver() {
             const [upIsSymbol] = testCharacter(upCharacter);
 
             if (upIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -56,7 +56,7 @@ export default function Solver() {
             const [downIsSymbol] = testCharacter(downCharacter);
 
             if (downIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -66,7 +66,7 @@ export default function Solver() {
             const [leftIsSymbol] = testCharacter(leftCharacter);
 
             if (leftIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -76,7 +76,7 @@ export default function Solver() {
             const [rightIsSymbol] = testCharacter(rightCharacter);
 
             if (rightIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -86,7 +86,7 @@ export default function Solver() {
             const [upLeftIsSymbol] = testCharacter(upLeftCharacter);
 
             if (upLeftIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -96,7 +96,7 @@ export default function Solver() {
             const [upRightIsSymbol] = testCharacter(upRightCharacter);
 
             if (upRightIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -106,7 +106,7 @@ export default function Solver() {
             const [downLeftIsSymbol] = testCharacter(downLeftCharacter);
 
             if (downLeftIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
 
@@ -116,16 +116,16 @@ export default function Solver() {
             const [downRightIsSymbol] = testCharacter(downRightCharacter);
 
             if (downRightIsSymbol) {
-              isSymbolAdjuscent = true;
+              isSymbolAdjacent = true;
             }
           }
         } else if (isPeriod || isSymbol) {
-          if (digits.length > 0 && isSymbolAdjuscent) {
+          if (digits.length > 0 && isSymbolAdjacent) {
             const num = parseInt(digits.join(""));
             total = total + num;
           }
           digits = [];
-          isSymbolAdjuscent = false;
+          isSymbolAdjacent = false;
         }
       }
     }
