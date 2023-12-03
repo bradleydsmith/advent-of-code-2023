@@ -31,6 +31,11 @@ export default function Home() {
             Day 2
           </Link>
         </li>
+        <li>
+          <Link className="text-blue-400 hover:underline" href="/days/3">
+            Day 3
+          </Link>
+        </li>
       </ul>
     </main>
   );
